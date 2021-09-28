@@ -1,0 +1,27 @@
+﻿  TextAdventure.cpp
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(4132,1): warning C4267: 'initializing': conversion from 'size_t' to 'entt::entt_traits<uint32_t,void>::difference_type', possible loss of data
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(4131): message : while compiling class template member function 'entt::sparse_set<Entity>::sparse_set_iterator entt::sparse_set<Entity>::begin(void) noexcept const'
+          with
+          [
+              Entity=entt::entity
+          ]
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(6943): message : see reference to function template instantiation 'entt::sparse_set<Entity>::sparse_set_iterator entt::sparse_set<Entity>::begin(void) noexcept const' being compiled
+          with
+          [
+              Entity=entt::entity
+          ]
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(4491): message : see reference to class template instantiation 'entt::sparse_set<Entity>' being compiled
+          with
+          [
+              Entity=entt::entity
+          ]
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(7601): message : see reference to class template instantiation 'entt::storage<Entity,Component,void>' being compiled
+          with
+          [
+              Entity=entt::entity,
+              Component=Position
+          ]
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(8478): message : see reference to class template instantiation 'entt::basic_registry<entt::entity>::pool_handler<Position>' being compiled
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\TextAdventure\TextAdventure\TextAdventure.cpp(161): message : see reference to function template instantiation 'Position &entt::basic_registry<entt::entity>::get<Position>(const entt::entity)' being compiled
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(4132,1): warning C4267: 'initializing': conversion from 'size_t' to 'const entt::entt_traits<uint32_t,void>::difference_type', possible loss of data
+  TextAdventure.vcxproj -> C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\TextAdventure\x64\Debug\TextAdventure.exe

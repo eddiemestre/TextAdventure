@@ -1,0 +1,148 @@
+﻿  TextAdventure.cpp
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(146,27): error C7530: applying a pack-expansion to a using-declaration requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(147): message : see reference to class template instantiation 'entt::overloaded<Func...>' being compiled
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(155,16): error C2988: unrecognizable template declaration/definition
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(155,16): error C2143: syntax error: missing ')' before '...'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(155,16): error C2143: syntax error: missing ';' before '...'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(155,12): error C2365: 'Func': redefinition; previous definition was 'template parameter'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(155): message : see declaration of 'Func'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(155,1): error C2059: syntax error: ')'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(155,1): error C2988: unrecognizable template declaration/definition
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(155,1): error C2059: syntax error: '->'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(155,35): error C2065: 'Func': undeclared identifier
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(155,1): error C3544: 'Func': parameter pack expects a type template argument
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(320,13): warning C4984: 'if constexpr' is a C++17 language extension
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(320,13): message : This diagnostic occurred in the compiler generated function 'void entt::radix_sort<Bit,N>::operator ()(It,It,Getter) const'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(326): message : see reference to class template instantiation 'entt::radix_sort<Bit,N>' being compiled
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(411,46): error C7525: inline variables require at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(421): message : see reference to class template instantiation 'entt::family<<unnamed-symbol>...>' being compiled
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(411,1): error C2864: 'entt::family<<unnamed-symbol>...>::identifier': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(411,1): message : type is 'entt::id_type'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(420,37): error C7525: inline variables require at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(646,1): error C2988: unrecognizable template declaration/definition
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(646,1): error C2059: syntax error: 'const'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(748,21): error C7518: fold expressions require at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(748,21): message : This diagnostic occurred in the compiler generated function 'entt::id_type entt::identifier<Types...>::get(std::integer_sequence<size_t,_Jx...>)'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(758): message : see reference to class template instantiation 'entt::identifier<Types...>' being compiled
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(815,43): error C7525: inline variables require at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(816): message : see reference to class template instantiation 'entt::monostate<__formal>' being compiled
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(824,25): error C7525: inline variables require at least '/std:c++17'
+  The contents of <string_view> are available only with C++17 or later.
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(904,22): error C2760: syntax error: unexpected token 'identifier', expected ';'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(959,23): error C7525: inline variables require at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(993,41): error C2039: 'string_view': is not a member of 'std'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\JSON39\include\nlohmann\json.hpp(8695): message : see declaration of 'std'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(1007): message : see reference to class template instantiation 'entt::type_info<Type,<unnamed-symbol>>' being compiled
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(993,1): error C3646: 'name': unknown override specifier
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(993,1): error C2059: syntax error: ')'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(993,1): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(1046,10): error C3533: a parameter cannot have a type that contains 'auto'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(1046,10): message : 'auto' in non-type template parameters requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(1047,23): error C7525: inline variables require at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(1054,10): error C3533: a parameter cannot have a type that contains 'auto'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(1054,10): message : 'auto' in non-type template parameters requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(1089,30): error C7525: inline variables require at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(1117,23): error C7525: inline variables require at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(1223,23): error C7525: inline variables require at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(1242,23): error C7525: inline variables require at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2614,10): error C3533: a parameter cannot have a type that contains 'auto'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2614,10): message : 'auto' in non-type template parameters requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2619,10): error C3533: a parameter cannot have a type that contains 'auto'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2619,10): message : 'auto' in non-type template parameters requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2620,38): error C7525: inline variables require at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2647,14): error C3533: a parameter cannot have a type that contains 'auto'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2647,14): message : 'auto' in non-type template parameters requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2866): message : see reference to class template instantiation 'entt::delegate<Ret(Args...)>' being compiled
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2655,14): error C3533: a parameter cannot have a type that contains 'auto'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2655,14): message : 'auto' in non-type template parameters requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2664,14): error C3533: a parameter cannot have a type that contains 'auto'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2664,14): message : 'auto' in non-type template parameters requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2691,14): error C3533: a parameter cannot have a type that contains 'auto'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2691,14): message : 'auto' in non-type template parameters requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2703,14): error C3533: a parameter cannot have a type that contains 'auto'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2703,14): message : 'auto' in non-type template parameters requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2722,14): error C3533: a parameter cannot have a type that contains 'auto'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2722,14): message : 'auto' in non-type template parameters requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2752,14): error C3533: a parameter cannot have a type that contains 'auto'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2752,14): message : 'auto' in non-type template parameters requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2776,14): error C3533: a parameter cannot have a type that contains 'auto'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2776,14): message : 'auto' in non-type template parameters requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2726,9): warning C4984: 'if constexpr' is a C++17 language extension
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2726,9): message : This diagnostic occurred in the compiler generated function 'void entt::delegate<Ret(Args...)>::connect(void) noexcept'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2726,68): error C2760: syntax error: unexpected token ',', expected 'expression'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2726,68): message : This diagnostic occurred in the compiler generated function 'void entt::delegate<Ret(Args...)>::connect(void) noexcept'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2756,9): warning C4984: 'if constexpr' is a C++17 language extension
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2756,9): message : This diagnostic occurred in the compiler generated function 'void entt::delegate<Ret(Args...)>::connect(Type &) noexcept'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2756,68): error C2760: syntax error: unexpected token ',', expected 'expression'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2756,68): message : This diagnostic occurred in the compiler generated function 'void entt::delegate<Ret(Args...)>::connect(Type &) noexcept'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2780,9): warning C4984: 'if constexpr' is a C++17 language extension
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2780,9): message : This diagnostic occurred in the compiler generated function 'void entt::delegate<Ret(Args...)>::connect(Type *) noexcept'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2780,68): error C2760: syntax error: unexpected token ',', expected 'expression'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2780,68): message : This diagnostic occurred in the compiler generated function 'void entt::delegate<Ret(Args...)>::connect(Type *) noexcept'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2887,10): error C3533: a parameter cannot have a type that contains 'auto'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2887,10): message : 'auto' in non-type template parameters requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2888,36): error C2988: unrecognizable template declaration/definition
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2888,36): error C2143: syntax error: missing ';' before 'noexcept'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2888,10): error C7538: '?$connect_arg_t@$Q?A(W_BAAB@)' is not a variable template
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2888,36): error C2059: syntax error: 'noexcept'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2889,73): error C3861: 'Candidate': identifier not found
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2889,73): error C2065: 'Candidate': undeclared identifier
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2897,10): error C3533: a parameter cannot have a type that contains 'auto'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2897,10): message : 'auto' in non-type template parameters requires at least '/std:c++17'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2898,34): error C2988: unrecognizable template declaration/definition
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2898,34): error C2143: syntax error: missing ')' before ','
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2898,10): error C7538: '?$connect_arg_t@$Q?A(W_BAAB@)' is not a variable template
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2898,10): error C2374: 'entt::?$connect_arg_t@$Q?A(W_BAAB@)': redefinition; multiple initialization
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2888): message : see declaration of 'entt::?$connect_arg_t@$Q?A(W_BAAB@)'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2898,1): error C2988: unrecognizable template declaration/definition
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2898,1): error C2059: syntax error: ','
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2898,1): error C2059: syntax error: ')'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2904,13): error C2988: unrecognizable template declaration/definition
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2904,13): error C2143: syntax error: missing ')' before '('
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2904,1): error C2988: unrecognizable template declaration/definition
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(2904,1): error C2059: syntax error: ')'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3059,13): warning C4984: 'if constexpr' is a C++17 language extension
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3059,13): message : This diagnostic occurred in the compiler generated function 'void entt::sigh<Ret(Args...)>::collect(Func,Args...) const'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3079): message : see reference to class template instantiation 'entt::sigh<Ret(Args...)>' being compiled
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3060,17): warning C4984: 'if constexpr' is a C++17 language extension
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3060,17): message : This diagnostic occurred in the compiler generated function 'void entt::sigh<Ret(Args...)>::collect(Func,Args...) const'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3060,56): error C2760: syntax error: unexpected token ',', expected 'expression'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3060,56): message : This diagnostic occurred in the compiler generated function 'void entt::sigh<Ret(Args...)>::collect(Func,Args...) const'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3095,9): error C2059: syntax error: ':'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3107,9): error C2059: syntax error: 'return'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3107,45): error C2238: unexpected token(s) preceding ';'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3111,5): error C2628: 'entt::connection' followed by 'void' is illegal (did you forget a ';'?)
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3112,12): error C2065: 'disconnect': undeclared identifier
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3113,24): error C2065: 'signal': undeclared identifier
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3113,13): error C3861: 'disconnect': identifier not found
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3114,13): error C2065: 'disconnect': undeclared identifier
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3118,1): error C2059: syntax error: 'private'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3141,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3141,40): error C2143: syntax error: missing ',' before '&'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3142,9): error C2059: syntax error: ':'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3150,13): error C3927: '->': trailing return type is not allowed after a non-function declarator
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3150,13): error C3484: syntax error: expected '->' before the return type
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3150,21): error C3613: missing return type after '->' ('int' assumed)
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3150,21): error C3646: 'release': unknown override specifier
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3150,21): error C2059: syntax error: '('
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3150,23): error C2238: unexpected token(s) preceding ';'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3157,23): error C2143: syntax error: missing ';' before '&'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3157,62): error C2059: syntax error: '='
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3164,35): error C2065: 'connection': undeclared identifier
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3164,46): error C2146: syntax error: missing ')' before identifier 'other'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3164,53): error C2143: syntax error: missing ';' before '{'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3164,53): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3173,64): error C2270: 'operator bool': modifiers not allowed on nonmember functions
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3173,64): error C2178: 'operator bool' cannot be declared with 'explicit' specifier
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3173,64): error C2801: 'operator bool' must be a non-static member
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3174,34): error C2065: 'conn': undeclared identifier
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3179,9): error C2065: 'conn': undeclared identifier
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3182,1): error C2059: syntax error: 'private'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3183,16): error C2146: syntax error: missing ';' before identifier 'conn'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3184,1): error C2059: syntax error: '}'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3184,1): error C2143: syntax error: missing ';' before '}'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3206,11): error C2988: unrecognizable template declaration/definition
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3206,11): error C2143: syntax error: missing ';' before '<'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3206,11): error C2059: syntax error: '<'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3206,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\egmes\OneDrive - Personal\OneDrive\Projects\Code\GameEngine\External Libraries\entt\include\entt\entt.hpp(3206,1): fatal error C1003: error count exceeds 100; stopping compilation

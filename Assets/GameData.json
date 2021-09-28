@@ -1,0 +1,357 @@
+﻿{
+  "Player": {
+    "position": "living_room"
+  },
+  "Characers": [
+    {
+      "name": "William",
+      "ldesc": [
+        "William, age 10, holding a tasty beverage and insecure about his mother's various relationships with other men."
+      ],
+      "sdesc": [
+        "William holding a tasty beverage"
+      ],
+      "adesc": [
+        "William humming the tune of your favorite cartoon"
+      ],
+      "lindex": 0,
+      "sindex": 0,
+      "aindex": 0,
+      "position": "main_room",
+      "itemArray": [
+        "tasty beverage"
+      ],
+      "Dialogue": {
+        "introduction": {
+          "dialogue": [
+            "What's that? Boris won't let you leave the house until he get's a tasty beverage? I'm not giving this up, sorry.",
+            "Tell Boris to get over himself. I'm not giving this up unless mom gives me my scrumptious snack.",
+            "Mom said she'd be back in a bit. She went out with John.",
+            "Sometimes she makes my scrumptious snack in the morning and keeps it in the pantry... but she locks it when she isn't home",
+            "I wonder what's in the pantry..."
+          ],
+          "index": 0,
+          "priority": 1,
+          "eventArray": [
+            "index_increase",
+            "index_increase",
+            "index_increase",
+            "index_increase",
+            "index_increase",
+            "clear"
+          ]
+        },
+        "default": {
+          "dialogue": [
+            "If you want my tasty beverage, you'll have to give me my scrumptious snack.",
+            "Ever since mom started seeing John, she's made me less and less scrumptious snacks."
+          ],
+          "index": 0,
+          "eventArray": []
+        },
+        "have_snack": {
+          "dialogue": [
+            "Hey, what's that? Is that a scrumptious snack? How did you get one of those? Could I have it? Could I have it please?",
+            "Could I have that scrumptious snack?"
+          ],
+          "index": 0,
+          "priority": 1,
+          "eventArray": []
+        },
+        "give_snack": {
+          "dialogue": [
+            "Oh wow thank you! This is exactly what I wanted. Here, you can have this tasty beverage."
+          ],
+          "index": 0,
+          "eventArray": [
+            "have_beverage"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Boris",
+      "ldesc": [
+        "Boris, age 8. Moody and in desparate need for a tasty beverage."
+      ],
+      "sdesc": [
+        "Boris, William's younger brother."
+      ],
+      "adesc": [
+        "Boris breathing angrily"
+      ],
+      "lindex": 0,
+      "sindex": 0,
+      "aindex": 0,
+      "position": "foyer",
+      "itemArray": [],
+      "Dialogue": {
+        "introduction": {
+          "dialogue": [
+            "What's that? You want to leave? Well I'm not letting you until I get my tasty beverage.",
+            "Why? Because you're William's friend and you can make him give me my tasty beverage",
+            "I don't care where you have to be. Without my tasty beverage, you aren't leaving this house."
+          ],
+          "index": 0,
+          "eventArray": []
+        },
+        "default": {
+          "dialogue": [
+            "If you give me my tasty beverage, I'll let you leave the house.",
+            "Thank you for my tasty beverage. It's just what I wanted."
+          ],
+          "index": 0,
+          "eventArray": []
+        },
+        "have_snack": {
+          "dialogue": [
+            "Ew what's that smell? Is... Is that a scrumptious snack? Mom always makes them for William, but I think they are disgusting. Don't bring it any closer.",
+            "William likes scrumptious snacks."
+          ],
+          "index": 0,
+          "eventArray": []
+        },
+        "have_beverage": {
+          "dialogue": [
+            "Wha... What's that? Is that my tasty beverage? Could... Could I have it?",
+            "Cmon please can I have that tasty beverage?"
+          ],
+          "index": 0,
+          "eventArray": []
+        },
+        "give_beverage": {
+          "dialogue": [
+            "Wow, thank you! This is the best thing that has happened all day. I'll let you leave now."
+          ],
+          "index": 0,
+          "eventArray": [
+            "door_open"
+          ]
+        }
+      }
+    }
+  ],
+  "Locations": [
+    {
+      "sceneName": "living_room",
+      "ldesc": [
+        "the living room. It has comfy couches, a coffee table, and TV among other things. The TV is playing a bad cartoon."
+      ],
+      "sdesc": [
+        "the living room."
+      ],
+      "adesc": [
+        "a bad cartoon. TV was better when you were younger."
+      ],
+      "lindex": 0,
+      "sindex": 0,
+      "aindex": 0,
+      "persistentBoolObjects": [
+        {
+          "name": "living_room_north_door",
+          "type": "door",
+          "desc": false,
+          "direction": "north",
+          "toLocation": "foyer",
+          "render": true,
+          "activated": true,
+          "eventArray": []
+        },
+        {
+          "name": "living_room_south_door",
+          "type": "door",
+          "desc": false,
+          "direction": "south",
+          "toLocation": "kitchen",
+          "render": true,
+          "activated": true,
+          "eventArray": []
+        },
+        {
+          "name": "living_room_east_door",
+          "type": "door",
+          "desc": false,
+          "direction": "east",
+          "toLocation": "bedroom",
+          "render": true,
+          "activated": true,
+          "eventArray": []
+        }
+      ]
+    },
+    {
+      "sceneName": "foyer",
+      "ldesc": [
+        "the foyer. Some shoes sit in front of a coat closet. Boris is standing in front of the house's main door.",
+        "the foyer. Some shoes sit in front of a coat closet. Boris is sipping a tasty beverage in the corner and humming to himself."
+      ],
+      "sdesc": [
+        "The foyer."
+      ],
+      "adesc": [
+        "faint sounds of a bad cartoon coming from the Living Room."
+      ],
+      "lindex": 0,
+      "sindex": 0,
+      "aindex": 0,
+      "persistentBoolObjects": [
+        {
+          "name": "end_door",
+          "type": "door",
+          "desc": false,
+          "direction": "north",
+          "toLocation": "exit",
+          "render": true,
+          "activated": false,
+          "eventArray": [
+            "win_game"
+          ]
+        },
+        {
+          "name": "foyer_south_door",
+          "type": "door",
+          "desc": false,
+          "direction": "south",
+          "toLocation": "living_room",
+          "render": true,
+          "activated": true,
+          "eventArray": []
+        }
+      ]
+    },
+    {
+      "sceneName": "bedroom",
+      "ldesc": [
+        "the bedroom. An old computer game is loaded up on a monitor. William is sitting on his bed with a tasty beverage.",
+        "the bedroom. An old computer game is loaded up on a monitor. William is sitting on his bed with a scrumptious snack"
+      ],
+      "sdesc": [
+        "The bedroom."
+      ],
+      "adesc": [
+        "the 8-bit tune of William's favorite video game. Hearing it will probably bring you joy later in life."
+      ],
+      "lindex": 0,
+      "sindex": 0,
+      "aindex": 0,
+      "persistentBoolObjects": [
+        {
+          "name": "bedroom_west_door",
+          "type": "door",
+          "desc": false,
+          "direction": "west",
+          "toLocation": "living_room",
+          "render": true,
+          "activated": true,
+          "eventArray": []
+        }
+      ]
+    },
+    {
+      "sceneName": "kitchen",
+      "ldesc": [
+        "the kitchen. There are some dirty dishes in the sink and a refrigerator humming loudly. A pantry door sits beside the fridge."
+      ],
+      "sdesc": [
+        "the kitchen."
+      ],
+      "adesc": [
+        "the sounds of the refigerator humming and faint sounds of a bad cartoon coming from the living room. You're developing a headache."
+      ],
+      "lindex": 0,
+      "sindex": 0,
+      "aindex": 0,
+      "persistentBoolObjects": [
+        {
+          "name": "kitchen_north_door",
+          "type": "door",
+          "desc": false,
+          "direction": "north",
+          "toLocation": "living_room",
+          "render": true,
+          "activated": true,
+          "eventArray": []
+        },
+        {
+          "name": "pantry",
+          "type": "container",
+          "desc": true,
+          "ldesc": [
+            "it's locked.",
+            "the pantry. Most of the items in here don't suit your fancy but a scrumptious snack sits on a reachable shelf...",
+            "the pantry. The items in here don't suit your fancy."
+          ],
+          "sdesc": [
+            "the pantry"
+          ],
+          "adesc": [
+            "but nothing in here is making a sound"
+          ],
+          "lindex": 0,
+          "sindex": 0,
+          "aindex": 0,
+          "activated": false,
+					"render": true,
+          "key": "keys",
+          "items": [
+            "scrumptious snack"
+          ],
+          "eventArray": []
+        }
+      ]
+    }
+  ],
+  "Events": {
+    "door_open": [
+      {
+        "type": "activate",
+        "name": "end_door"
+      },
+      {
+        "type": "increase_index",
+        "name": "Boris",
+        "property": "default",
+        "isDialogue": true,
+        "index": 1
+      }
+    ],
+    "have_beverage": [
+      {
+        "type": "dialogue",
+        "name": "Borus",
+        "event": ""
+      }
+    ],
+    "introduction": [],
+    "default": [],
+    "win_game": [],
+    "pantry_unlocked": [],
+    "have_snack": [],
+    "pantry_no_snack": [],
+    "give_snack": [],
+    "give_beverage": [],
+    "index_increase": [],
+    "index_decrease": [],
+    "clear": [],
+    "activate": [
+      {
+        "activated": true
+      }
+    ]
+  },
+  "Items": [
+    {
+      "name": "keys",
+      "used_on": [
+        "container"
+      ],
+      "eventArray": []
+    },
+    {
+      "name": "scrumptious snack"
+    },
+    {
+      "name": "tasty beverage"
+    }
+  ]
+}

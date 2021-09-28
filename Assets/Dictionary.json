@@ -1,0 +1,136 @@
+{
+	"Dictionary": [
+		{
+			"name": "inspect",
+			"pos": "action",
+			"type": "action",
+
+			"syns": []
+		},
+		{
+			"name": "use",
+			"pos": "action",
+			"type": "action",
+
+			"syns": []
+		},
+		{
+			"name": "get",
+			"pos": "action",
+			"type": "action",
+			"syns": []
+		},
+		{
+			"name": "drop",
+			"pos": "action",
+			"type": "action",
+			"syns": []
+		},
+		{
+			"name": "listen",
+			"pos": "action",
+			"type": "action",
+			"syns": []
+		},
+		{
+			"name": "talk",
+			"pos": "action",
+			"type": "action",
+			"syns": []
+		},
+		{
+			"name": "give",
+			"pos": "action",
+			"type": "action",
+			"syns": []
+		},
+		{
+			"name": "go",
+			"pos": "action",
+			"type": "action",
+			"syns": [
+				"walk",
+				"run",
+				"proceed",
+				"move",
+				"advance",
+				"progress"
+			]
+		},
+		{
+			"name": "north",
+			"pos": "object",
+			"type": "direction",
+			"syns": [
+			"n"
+			]
+		},
+		{
+			"name": "east",
+			"pos": "object",
+			"type": "direction",
+			"syns": [
+			"e"
+			]
+		},
+		{
+			"name": "south",
+			"pos": "object",
+			"type": "direction",
+			"syns": [
+			"s"
+			]
+		},
+		{
+			"name": "west",
+			"pos": "object",
+			"type": "direction",
+			"syns": [
+			"w"
+			]
+		}
+		
+	],
+	"Grammar": [
+		{
+			"tree":[
+				"action",
+				"object"
+			],
+			"index_id": 0
+		},
+		{
+			"tree": [
+				"action",
+				"object",
+				"pronoun",
+				"object"
+			],
+			"index_id": 1
+		},
+		{
+			"tree": [
+				"action",
+				"pronoun",
+				"object"
+			],
+			"index_id": 2
+		},
+		{
+			"tree": [
+				"action",
+				"object",
+				"object"
+			],
+			"index_id": 3
+
+		},
+		{
+			"tree": [
+				"object"
+			],
+			"index_id": 4
+
+		}
+	]
+}
