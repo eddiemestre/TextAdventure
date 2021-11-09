@@ -16,7 +16,7 @@ Current features are limited as the project is in its infancy. Support exists fo
 - [ ] Enemy entity support
 - [ ] Entity stats
 - [ ] Combat System
-- [ ] Develop a more robust rendering environment likely using [NCurses](https://en.wikipedia.org/wiki/Ncurses) or a similar library for retro flare.
+- [ ] Develop a more robust rendering environment likely using [NCurses](https://en.wikipedia.org/wiki/Ncurses) or a similar library for retro flare
 
 ## Basic Overview
 
