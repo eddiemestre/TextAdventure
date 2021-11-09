@@ -1,7 +1,9 @@
 #include "Components.h"
 #include <string>
 
+// A list of all Components that need to be initialized
 
+// likely obsolete
 //BoolObject::BoolObject(std::string & name, std::string & sceneName, bool activated, bool render)
 //	:name(name)
 //	, sceneName(sceneName)

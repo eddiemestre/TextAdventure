@@ -15,26 +15,6 @@
 
 using json = nlohmann::json;
 
-// likely obsolete struct
-
-//struct TreeNode {
-//	std::string value;
-//	std::vector<TreeNode*> children;
-//
-//	TreeNode();
-//
-//	TreeNode(std::string& s);
-//
-//	//TreeNode* ConstructGrammarTree();
-//	//TreeNode* newNode(std::string& value);
-//
-//	//bool operator==(const TreeNode* n1, const TreeNode* n2);
-//
-//	void AddChild(TreeNode* parent, std::string& childValue);
-//
-//};
-
-
 
 void ToLower(std::string& input);
 
@@ -57,3 +37,22 @@ void DetermineEvents(const std::vector<std::string>& userInput, const int& gramm
 void ActionObjectCompatibility(const std::vector<std::string>& userInput, const json& gameData, entt::entity& player, entt::registry& registry, const std::unordered_map<std::string, std::vector<std::string>>& dictionary);
 
 void ObjectCompatibility(const std::vector<std::string>& userInput, const json& gameData, entt::entity& player, entt::registry& registry, const std::unordered_map<std::string, std::vector<std::string>>& dictionary);
+
+// likely obsolete struct
+
+//struct TreeNode {
+//	std::string value;
+//	std::vector<TreeNode*> children;
+//
+//	TreeNode();
+//
+//	TreeNode(std::string& s);
+//
+//	//TreeNode* ConstructGrammarTree();
+//	//TreeNode* newNode(std::string& value);
+//
+//	//bool operator==(const TreeNode* n1, const TreeNode* n2);
+//
+//	void AddChild(TreeNode* parent, std::string& childValue);
+//
+//};

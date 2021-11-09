@@ -3,6 +3,49 @@
 
 // *** currently not in use. Probably won't be? Don't want to delete just yet... **** //
 
+// Adds edge to a node assuming a linked list data structure
+void AddE(Node& s, Node& d, Graph& g) {
+	std::unordered_map<std::string, std::vector<Node>>::iterator t = g.map.find(s.name);
+
+	if (t != g.map.end()) {
+		// check if source is already connected to destination node, throw if that's the case
+		auto k = g.map.find(s.name)->second;
+		for (auto n : k) {
+			if (d == n) {
+				std::cout << s.name << " already has node " << d.name << '\n';
+				exit(EXIT_FAILURE);
+			}
+		}
+
+		// otherwise, the destination already exists in the map and we just
+		// need to connect both OR destination node doesn't exist and we need
+		// to connect both. Either way, this is solved by the following
+		g.map[d.name].push_back(s);
+		g.map[s.name].push_back(d);
+
+		//// check if destination node already exists in map, if so, connect both
+		//std::unordered_map<std::string, std::vector<Node>>::iterator j = g.map.find(d.name);
+
+		//if (j != g.map.end()) {
+		//	g.map[d.name].push_back(s);
+		//	g.map[s.name].push_back(d);
+		//}
+		//else {	// if not, connect nodes and add destination node to graph
+		//	g.map[d.name].push_back(s);
+		//	g.map[s.name].push_back(d);
+
+		//}
+
+
+
+	}
+	else {
+		g.map[s.name].push_back(d);
+		g.map[d.name].push_back(s);
+
+	}
+
+}
 
 //void AddEdge(Node& s, Node& d, Graph& g) {
 //	auto it = std::find_if(g.nodeVec.begin(),
@@ -69,45 +112,3 @@
 //	}
 //}
 
-void AddE(Node& s, Node& d, Graph& g) {
-	std::unordered_map<std::string, std::vector<Node>>::iterator t = g.map.find(s.name);
-	
-	if (t != g.map.end()) {
-		// check if source is already connected to destination node, throw if that's the case
-		auto k = g.map.find(s.name)->second;
-		for (auto n : k) {
-			if (d == n) {
-				std::cout << s.name << " already has node " << d.name << '\n';
-				exit(EXIT_FAILURE);
-			}
-		}
-
-		// otherwise, the destination already exists in the map and we just
-		// need to connect both OR destination node doesn't exist and we need
-		// to connect both. Either way, this is solved by the following
-		g.map[d.name].push_back(s);
-		g.map[s.name].push_back(d);
-
-		//// check if destination node already exists in map, if so, connect both
-		//std::unordered_map<std::string, std::vector<Node>>::iterator j = g.map.find(d.name);
-
-		//if (j != g.map.end()) {
-		//	g.map[d.name].push_back(s);
-		//	g.map[s.name].push_back(d);
-		//}
-		//else {	// if not, connect nodes and add destination node to graph
-		//	g.map[d.name].push_back(s);
-		//	g.map[s.name].push_back(d);
-
-		//}
-
-
-
-	}
-	else {
-		g.map[s.name].push_back(d);
-		g.map[d.name].push_back(s);
-
-	}
-
-}

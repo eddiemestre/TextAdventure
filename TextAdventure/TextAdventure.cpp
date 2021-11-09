@@ -7,7 +7,7 @@
 #include <fstream>
 
 
-
+// initializes game data - loads json data
 bool Game::Initialize() {
 
    // call all load data functions
@@ -18,11 +18,15 @@ bool Game::Initialize() {
     return true;
 }
 
+// Shutdown
 void Game::Shutdown() {
     // call unload data
     UnloadData();
 }
 
+// Load Data Function
+// Loads the game dictionary of valid words, grammar rules to check valid grammar
+// player, and location data. 
 void Game::LoadData() {
 
     fileInput.open(gameDataFilePath, std::ios::in);
@@ -67,7 +71,7 @@ void Game::UnloadData() {
     // delete or close or save data
 }
 
-
+// Processing Player Input
 void Game::ProcessInput() {
     
     // ensure there is no previous input in vectors
@@ -110,8 +114,6 @@ void Game::ProcessInput() {
     RemoveThe(vectorInput);
 
     // validate language
-
-
     if (!ValidateLanguage(vectorInput, inputGrammar, dictionary)) {
         // words or grammar aren't recognized, encourage user to retry input
         // short term solution to incorrect input
@@ -149,6 +151,8 @@ void Game::ProcessInput() {
 
 }
 
+// Update Game
+// Updates game state depending on player input
 void Game::UpdateGame() {
 
     // handle event execution and game state changes
@@ -161,6 +165,8 @@ void Game::UpdateGame() {
         wasHereLastLoop = true;
     }
 
+    // grab room information
+    // likely a short term solution
     auto t = registry.view<SceneName, lDescIndex, sDescIndex, aDescIndex>();
 
     for (auto i : t) {
@@ -193,6 +199,8 @@ void Game::UpdateGame() {
 
 }
 
+// Generate Output
+// Loops through the vectorOutput and renders all strings
 void Game::GenerateOutput() {
 
     // what about:
@@ -215,7 +223,7 @@ void Game::NewGame() {
 
 }
 
-
+// Runs Game loop
 void Game::RunLoop()
 {
 

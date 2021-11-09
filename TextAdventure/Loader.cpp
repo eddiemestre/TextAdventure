@@ -3,11 +3,15 @@
 
 using json = nlohmann::json;
 
+// Loads location data from the json file
 void ParseLocationData(json& j, entt::registry& r, Graph& g, bool d) {
+   
+    // find Location section of json
     if (j.find("Locations") != j.end() && d) {
         //std::printf("Locations found \n");
     }
 
+    // loop through Location Data
     for (auto &array : j["Locations"]) {
         const auto entity = r.create();
 
@@ -29,6 +33,7 @@ void ParseLocationData(json& j, entt::registry& r, Graph& g, bool d) {
             r.emplace<sDescIndex>(entity, index);
         }
 
+        // add audio index to entity
         if (array.contains("adesc")) {
             auto index = array["aindex"].get<int>();
             r.emplace<aDescIndex>(entity, index);
@@ -88,6 +93,7 @@ void ParseLocationData(json& j, entt::registry& r, Graph& g, bool d) {
 
 }
 
+// TO DO: obsolete?
 void LDescParse(json&, entt::registry& r, Graph& g, bool d)
 {
 }

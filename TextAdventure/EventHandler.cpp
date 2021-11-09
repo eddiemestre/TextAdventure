@@ -1,13 +1,14 @@
 
 #include "EventHandler.h"
 
-
+// Determines the direction the player should go
+// TO DO
+// build a more robust event system with Message Handlers and subscribers
+// include retrieval and execution of any event listeners/entity listeners
 void DirectionAction(const std::string& userInput, entt::entity& ent1, entt::registry& registry, const json& gameData)
 {
-	// TO DO
-	// build a more robust event system with Message Handlers and subscribers
-	// include retrieval and execution of any event listeners/entity listeners
 
+	// grab a view of persistent objects and scene names
 	auto view = registry.view<PersistentRoomObjects, SceneName>();
 	bool isRoom = false;
 	bool foundRoom = false;
@@ -49,6 +50,7 @@ void DirectionAction(const std::string& userInput, entt::entity& ent1, entt::reg
 				}
 			}
 
+			// if no door is found
 			if (!foundRoom) {
 				std::cout << "no door found going " << userInput << ". Try again.\n\n";
 			}

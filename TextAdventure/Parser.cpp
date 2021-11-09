@@ -2,25 +2,7 @@
 
 const std::string DICTIONARY_JSON = "../Assets/Dictionary.json";
 
-//TreeNode* newNode(std::string& value) {
-//	TreeNode* temp = new TreeNode;
-//	temp->value = value;
-//	return temp;
-//}
-//
-//void AddChild(TreeNode* parent, std::string& childValue) {
-//	TreeNode* child = new TreeNode;
-//	for (auto& i : parent->children) {
-//		if (i->value == childValue) {
-//			return;
-//		}
-//	}
-//	child->value = childValue;
-//	parent->children.emplace_back(child);
-//}
-
-
-
+// Converts input to lowercase
 void ToLower(std::string& input) {
 	// convert string to lowercase
 	std::for_each(input.begin(), input.end(), [](char& c) {
@@ -28,6 +10,8 @@ void ToLower(std::string& input) {
 	});
 }
 
+// uses a ' ' delimiter to parse the input string into a vector
+// of strings each string being one word in length
 void VectorizeInput(const std::string& input, std::vector<std::string>& vectorInput) {
 	size_t start = 0;
 	std::string delim = " ";
@@ -42,6 +26,7 @@ void VectorizeInput(const std::string& input, std::vector<std::string>& vectorIn
 	vectorInput.push_back(input.substr(start, end));
 }
 
+// Removes "the" from the input vector (unnecessary word)
 void RemoveThe(std::vector<std::string>& input)
 {
 	for (int i = 0; i < input.size(); ++i) {
@@ -51,15 +36,17 @@ void RemoveThe(std::vector<std::string>& input)
 	}
 }
 
+// 
 void PopulateDicionary(std::unordered_map<std::string, std::vector<std::string>>& dictionary)
 {
 	std::ifstream input(DICTIONARY_JSON);
 
-	// validate input file
+	// invalidate input file
 	if (!input) {
 		std::cout << "Unable to open file: " << DICTIONARY_JSON.c_str() << "\n";
 		exit(EXIT_FAILURE);
 	}
+	// valid
 	else if (input) {
 		//std::cout << "File " << DICTIONARY_JSON.c_str() << " openned successfully.\n";
 	}
@@ -76,11 +63,13 @@ void PopulateDicionary(std::unordered_map<std::string, std::vector<std::string>>
 	}
 
 	// strings for master word and part of speech
-	//std::vector<std::string> dictionaryVec;
 	std::string masterWord;
 	std::string pos;
 	std::string wordType;
 
+	// loops through the dictionary and populates the dictionary map with 
+	// the masterword name, it's part of speech, and its word type
+	// all of these are important for understanding grammar later
 	for (auto& array : Dictionary["Dictionary"]) {
 
 		masterWord = array["name"];
@@ -183,7 +172,7 @@ bool ConfirmGrammarPattern(std::vector<std::string>& inputGrammar, std::map<int,
 
 }
 
-// load player entity
+// load player entity data from json
 void LoadPlayerEntity(entt::entity& player, entt::registry& registry, json& gamedata)
 {
 	// Player Position
@@ -197,7 +186,7 @@ void LoadPlayerEntity(entt::entity& player, entt::registry& registry, json& game
 }
 
 // Determine Events to run based on user input
-// to do: develop this into a robust event system
+// TO DO: develop this into a robust event system
 void DetermineEvents(const std::vector<std::string>& userInput, const int& grammarIndex, const json& gameData, entt::entity& player, entt::registry& registry, const std::unordered_map<std::string, std::vector<std::string>>& dictionary)
 {
 
@@ -229,6 +218,7 @@ void DetermineEvents(const std::vector<std::string>& userInput, const int& gramm
 }
 
 // determine events to run under case 0
+// potentially temporary - need to develop more robust event system
 void ActionObjectCompatibility(const std::vector<std::string>& userInput, const json& gameData, entt::entity& player, entt::registry& registry, const std::unordered_map<std::string, std::vector<std::string>>& dictionary)
 {
 
@@ -246,7 +236,6 @@ void ActionObjectCompatibility(const std::vector<std::string>& userInput, const 
 // determine events to run under case 4
 void ObjectCompatibility(const std::vector<std::string>& userInput, const json& gameData, entt::entity& player, entt::registry& registry, const std::unordered_map<std::string, std::vector<std::string>>& dictionary)
 {
-
 	// check if this is a direction
 	std::unordered_map<std::string, std::vector<std::string>>::const_iterator it = dictionary.find(userInput[0]);
 	
@@ -280,4 +269,22 @@ void ObjectCompatibility(const std::vector<std::string>& userInput, const json& 
 //{
 //	TreeNode* temp = new TreeNode(childValue);
 //	parent->children.push_back(temp);
+//}
+
+// obsolete?
+//TreeNode* newNode(std::string& value) {
+//	TreeNode* temp = new TreeNode;
+//	temp->value = value;
+//	return temp;
+//}
+//
+//void AddChild(TreeNode* parent, std::string& childValue) {
+//	TreeNode* child = new TreeNode;
+//	for (auto& i : parent->children) {
+//		if (i->value == childValue) {
+//			return;
+//		}
+//	}
+//	child->value = childValue;
+//	parent->children.emplace_back(child);
 //}
